@@ -8,7 +8,6 @@ It is intentionally designed as a 21kb-spa-demo to showcase how powerful a vanil
 
 ---
 
-
 ## Development Env
 
 npx http-server
