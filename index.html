@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Home page">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy"
+content="
+default-src 'self';
+style-src 'self' https://unpkg.com;
+script-src 'self';
+img-src 'self' data:;
+object-src 'none';
+base-uri 'self';
+form-action 'self';
+">
+  <!-- <link rel="stylesheet" rel="preconnect" href="https://unpkg.com/@knadh/oat@0.3.0/oat.min.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/@knadh/oat@0.3.0/oat.min.css" integrity="sha384-RnZ1MQ4DrFkdnOH0CSxWlhGbAcDTDcgNoY1wjzebP7d6QhcVCr4Od/vOgQ16olb8" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <title>Home</title>
+</head>
+<body class="bg-[#FFF5F8] text-[#2A2A2A]">
+
+<header class="py-4 bg-white shadow-sm">
+  <div class="container flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-[#FF6FAE]">
+      Sweet Bliss
+    </h1>
+    <nav class="flex gap-4">
+        <a href="index.html" data-link>Home</a>
+        <a href="about.html" data-link>About</a>
+        <a href="contact.html" data-link>Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="app">
+  <!-- HERO -->
+    <section class="py-20 text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-8 flex flex-col justify-center items-center">
+                <h2 class="text-5xl font-bold mb-2 text-[#FF6FAE]">
+                    Freshly Baked Happiness
+                </h2>
+                <p class="text-lg mb-2 max-w-2xl mx-auto">
+                    Handcrafted cupcakes made with love, premium ingredients, and a sprinkle of magic.
+                </p>
+            </div>
+            <div class="col-4">
+                <svg width="180" height="180" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sweet Cupcake">
+  
+                    <!-- Frosting -->
+                    <path d="M60 90
+                            C40 70, 60 50, 85 60
+                            C95 35, 130 40, 130 65
+                            C155 60, 170 85, 140 95
+                            Z"
+                            fill="#FF6FAE"/>
+
+                    <!-- Cup Base -->
+                    <path d="M60 95 L140 95 L130 150 L70 150 Z"
+                            fill="#FF8C42"/>
+
+                    <!-- Wrapper Lines -->
+                    <line x1="80" y1="100" x2="85" y2="150" stroke="#ffffff" stroke-width="2"/>
+                    <line x1="100" y1="100" x2="100" y2="150" stroke="#ffffff" stroke-width="2"/>
+                    <line x1="120" y1="100" x2="115" y2="150" stroke="#ffffff" stroke-width="2"/>
+
+                    <!-- Cherry -->
+                    <circle cx="100" cy="50" r="8" fill="#E63946"/>
+                    <line x1="100" y1="42" x2="95" y2="30" stroke="#2A2A2A" stroke-width="2"/>
+
+                </svg>
+            </div>
+        </div>
+        
+
+        
+
+
+        <button class="px-6 py-3 bg-[#FF8C42] text-white rounded-lg text-lg shadow-md hover:scale-105 transition">
+        Order Now
+        </button>
+    </div>
+    </section>
+
+    <!-- FEATURED CUPCAKES -->
+    <section class="py-16 bg-white mt-6">
+    <div class="container">
+        <h3 class="text-3xl font-bold text-center mt-4 mb-6 text-[#FF6FAE]">
+        Our Best Sellers
+        </h3>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <article class="card">
+                        <header>
+                            <h3>Strawberry Dream</h3>
+                        </header>
+                        <p>Fresh strawberry frosting with vanilla base.</p>
+                        <footer class="flex gap-2 mt-4">
+                            <button class="outline">Buy Now at <span class="text-[#FF8C42] font-bold">₹149</span></button>
+                        </footer>
+                    </article>
+                </div>
+                <div class="col-4">
+                    <article class="card">
+                        <header>
+                            <h3>Chocolate Lava</h3>
+                        </header>
+                        <p>Rich cocoa with gooey chocolate center.</p>
+                        <footer class="flex gap-2 mt-4">
+                            <button class="outline">Buy Now at <span class="text-[#FF8C42] font-bold">₹159</span></button>
+                        </footer>
+                    </article>
+                </div>
+                <div class="col-4">
+                    <article class="card">
+                        <header>
+                            <h3>Orange Zest</h3>
+                        </header>
+                        <p>Citrus infused delight with creamy topping.</p>
+                        <footer class="flex gap-2 mt-4">
+                            <button class="outline">Buy Now at <span class="text-[#FF8C42] font-bold">₹139</span></button>
+                        </footer>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- WHY US -->
+    <section class="py-16 mt-6">
+    <div class="container text-center max-w-3xl">
+        <h3 class="text-3xl font-bold mb-6 text-[#FF6FAE]">
+        Why Choose Us?
+        </h3>
+        <p class="mb-4">
+        ✔ 100% Fresh Ingredients  
+        ✔ Custom Designs for Events  
+        ✔ Same Day Delivery  
+        ✔ Loved by 10,000+ Customers  
+        </p>
+    </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 bg-[#FF6FAE] text-white text-center">
+    <div class="container mt-6 mb-2">
+        <h3 class="text-3xl font-bold mb-6">
+        Sweeten Your Day Today!
+        </h3>
+        <button class="px-6 py-3 bg-[#FF8C42] rounded-lg text-lg shadow-md hover:scale-105 transition">
+        Shop Cupcakes
+        </button>
+    </div>
+    </section>
+</main>
+
+<script src="js/router.js" defer></script>
+<!-- <script src="https://unpkg.com/@knadh/oat/oat.min.js" defer></script> -->
+</body>
+</html>
