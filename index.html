@@ -2,166 +2,358 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Home page">
+  <meta name="description" content="Sweet Bliss – Artisan cupcakes baked fresh daily.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Security-Policy"
 content="
 default-src 'self';
 style-src 'self' https://unpkg.com;
-script-src 'self';
+script-src 'self' https://unpkg.com;
 img-src 'self' data:;
 object-src 'none';
 base-uri 'self';
 form-action 'self';
 ">
-  <!-- <link rel="stylesheet" rel="preconnect" href="https://unpkg.com/@knadh/oat@0.3.0/oat.min.css"> -->
-    <link rel="stylesheet" href="https://unpkg.com/@knadh/oat@0.3.0/oat.min.css" integrity="sha384-RnZ1MQ4DrFkdnOH0CSxWlhGbAcDTDcgNoY1wjzebP7d6QhcVCr4Od/vOgQ16olb8" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/@knadh/oat@0.3.0/oat.min.css" integrity="sha384-RnZ1MQ4DrFkdnOH0CSxWlhGbAcDTDcgNoY1wjzebP7d6QhcVCr4Od/vOgQ16olb8" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <title>Home</title>
+  <title>Sweet Bliss — Artisan Cupcakes</title>
 </head>
-<body class="bg-[#FFF5F8] text-[#2A2A2A]">
+<body>
 
-<header class="py-4 bg-white shadow-sm">
-  <div class="container flex justify-between items-center">
-    <h1 class="text-2xl font-bold text-[#FF6FAE]">
-      Sweet Bliss
-    </h1>
-    <nav class="flex gap-4">
-        <a href="index.html" data-link>Home</a>
-        <a href="about.html" data-link>About</a>
-        <a href="contact.html" data-link>Contact</a>
+<!-- ── HEADER ─────────────────────────────────────── -->
+<header>
+  <div class="container">
+    <nav class="site-nav">
+      <a href="index.html" class="nav-brand" data-link>🧁 Sweet Bliss</a>
+      <ul class="nav-links">
+        <li><a href="index.html" data-link>Home</a></li>
+        <li><a href="about.html" data-link>About</a></li>
+        <li><a href="contact.html" data-link>Contact</a></li>
+      </ul>
+      <button class="btn-nav-order">Order Now</button>
     </nav>
   </div>
 </header>
 
 <main id="app">
-  <!-- HERO -->
-    <section class="py-20 text-center">
+
+  <!-- ── HERO ─────────────────────────────────────── -->
+  <section class="hero">
     <div class="container">
-        <div class="row">
-            <div class="col-8 flex flex-col justify-center items-center">
-                <h2 class="text-5xl font-bold mb-2 text-[#FF6FAE]">
-                    Freshly Baked Happiness
-                </h2>
-                <p class="text-lg mb-2 max-w-2xl mx-auto">
-                    Handcrafted cupcakes made with love, premium ingredients, and a sprinkle of magic.
-                </p>
-            </div>
-            <div class="col-4">
-                <svg width="180" height="180" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sweet Cupcake">
-  
-                    <!-- Frosting -->
-                    <path d="M60 90
-                            C40 70, 60 50, 85 60
-                            C95 35, 130 40, 130 65
-                            C155 60, 170 85, 140 95
-                            Z"
-                            fill="#FF6FAE"/>
+      <div class="row" style="align-items: center;">
 
-                    <!-- Cup Base -->
-                    <path d="M60 95 L140 95 L130 150 L70 150 Z"
-                            fill="#FF8C42"/>
-
-                    <!-- Wrapper Lines -->
-                    <line x1="80" y1="100" x2="85" y2="150" stroke="#ffffff" stroke-width="2"/>
-                    <line x1="100" y1="100" x2="100" y2="150" stroke="#ffffff" stroke-width="2"/>
-                    <line x1="120" y1="100" x2="115" y2="150" stroke="#ffffff" stroke-width="2"/>
-
-                    <!-- Cherry -->
-                    <circle cx="100" cy="50" r="8" fill="#E63946"/>
-                    <line x1="100" y1="42" x2="95" y2="30" stroke="#2A2A2A" stroke-width="2"/>
-
-                </svg>
-            </div>
+        <div class="col-6">
+          <div class="hero-badge">✦ Baked Fresh Every Morning</div>
+          <h1>Artisan Cupcakes<br>Made with <em>Love</em></h1>
+          <p class="hero-desc">
+            Every cupcake is handcrafted with premium ingredients,
+            irresistible flavours, and a generous helping of joy.
+          </p>
+          <div class="hero-actions">
+            <button class="btn-primary">Order Now</button>
+            <button class="btn-ghost">Explore Menu</button>
+          </div>
         </div>
-        
 
-        
+        <div class="col-6 hero-visual">
+          <div class="hero-circle">
+            <span class="dot-a"></span>
+            <span class="dot-b"></span>
+            <span class="dot-c"></span>
+            <svg width="230" height="230" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"
+                 role="img" aria-label="Cupcake illustration">
+              <!-- Frosting -->
+              <path d="M60 90 C40 70, 60 50, 85 60 C95 35, 130 40, 130 65 C155 60, 170 85, 140 95 Z"
+                    fill="#C9366E"/>
+              <!-- Frosting highlight -->
+              <path d="M75 80 C70 68, 85 58, 95 63 C100 50, 116 53, 118 65"
+                    fill="none" stroke="rgba(255,255,255,0.38)" stroke-width="3" stroke-linecap="round"/>
+              <!-- Cup -->
+              <path d="M60 95 L140 95 L130 150 L70 150 Z" fill="#FF8C42"/>
+              <!-- Cup scallop top -->
+              <path d="M60 96 Q70 90 80 96 Q90 90 100 96 Q110 90 120 96 Q130 90 140 96"
+                    fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="1.5"/>
+              <!-- Wrapper lines -->
+              <line x1="80"  y1="100" x2="85"  y2="150" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+              <line x1="100" y1="100" x2="100" y2="150" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+              <line x1="120" y1="100" x2="115" y2="150" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+              <!-- Cherry stem -->
+              <path d="M100 43 Q96 31 91 27" fill="none" stroke="#5c3317" stroke-width="2" stroke-linecap="round"/>
+              <!-- Cherry -->
+              <circle cx="100" cy="49" r="10" fill="#E63946"/>
+              <circle cx="97"  cy="45" r="3.5" fill="rgba(255,255,255,0.28)"/>
+            </svg>
+          </div>
+        </div>
 
-
-        <button class="px-6 py-3 bg-[#FF8C42] text-white rounded-lg text-lg shadow-md hover:scale-105 transition">
-        Order Now
-        </button>
+      </div>
     </div>
-    </section>
+  </section>
 
-    <!-- FEATURED CUPCAKES -->
-    <section class="py-16 bg-white mt-6">
+  <!-- ── STATS ─────────────────────────────────────── -->
+  <div class="stats-strip">
     <div class="container">
-        <h3 class="text-3xl font-bold text-center mt-4 mb-6 text-[#FF6FAE]">
-        Our Best Sellers
-        </h3>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-4">
-                    <article class="card">
-                        <header>
-                            <h3>Strawberry Dream</h3>
-                        </header>
-                        <p>Fresh strawberry frosting with vanilla base.</p>
-                        <footer class="flex gap-2 mt-4">
-                            <button class="outline">Buy Now at <span class="text-[#FF8C42] font-bold">₹149</span></button>
-                        </footer>
-                    </article>
-                </div>
-                <div class="col-4">
-                    <article class="card">
-                        <header>
-                            <h3>Chocolate Lava</h3>
-                        </header>
-                        <p>Rich cocoa with gooey chocolate center.</p>
-                        <footer class="flex gap-2 mt-4">
-                            <button class="outline">Buy Now at <span class="text-[#FF8C42] font-bold">₹159</span></button>
-                        </footer>
-                    </article>
-                </div>
-                <div class="col-4">
-                    <article class="card">
-                        <header>
-                            <h3>Orange Zest</h3>
-                        </header>
-                        <p>Citrus infused delight with creamy topping.</p>
-                        <footer class="flex gap-2 mt-4">
-                            <button class="outline">Buy Now at <span class="text-[#FF8C42] font-bold">₹139</span></button>
-                        </footer>
-                    </article>
-                </div>
-            </div>
+      <div class="row">
+        <div class="col-4 stat-item">
+          <span class="stat-num">10k+</span>
+          <span class="stat-lbl">Happy Customers</span>
         </div>
+        <div class="col-4 stat-item">
+          <span class="stat-num">50+</span>
+          <span class="stat-lbl">Cupcake Flavours</span>
+        </div>
+        <div class="col-4 stat-item">
+          <span class="stat-num">4.9★</span>
+          <span class="stat-lbl">Average Rating</span>
+        </div>
+      </div>
     </div>
-    </section>
+  </div>
 
-    <!-- WHY US -->
-    <section class="py-16 mt-6">
-    <div class="container text-center max-w-3xl">
-        <h3 class="text-3xl font-bold mb-6 text-[#FF6FAE]">
-        Why Choose Us?
-        </h3>
-        <p class="mb-4">
-        ✔ 100% Fresh Ingredients  
-        ✔ Custom Designs for Events  
-        ✔ Same Day Delivery  
-        ✔ Loved by 10,000+ Customers  
+  <!-- ── BEST SELLERS ───────────────────────────────── -->
+  <section class="section">
+    <div class="container">
+
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <span class="section-eyebrow">Our Menu</span>
+        <h2 class="section-heading">Best Sellers</h2>
+        <p class="section-sub">
+          Our most loved cupcakes — crafted with the finest ingredients
+          and an embarrassing amount of love.
         </p>
-    </div>
-    </section>
+      </div>
 
-    <!-- CTA -->
-    <section class="py-20 bg-[#FF6FAE] text-white text-center">
-    <div class="container mt-6 mb-2">
-        <h3 class="text-3xl font-bold mb-6">
-        Sweeten Your Day Today!
-        </h3>
-        <button class="px-6 py-3 bg-[#FF8C42] rounded-lg text-lg shadow-md hover:scale-105 transition">
-        Shop Cupcakes
-        </button>
+      <div class="row">
+
+        <div class="col-4">
+          <div class="product-card">
+            <div class="product-thumb" style="background: linear-gradient(135deg, #ffe4f0, #ffd0e8);">
+              🍓
+            </div>
+            <div class="product-body">
+              <div class="product-meta">
+                <h3>Strawberry Dream</h3>
+                <span class="badge success">Popular</span>
+              </div>
+              <p>Fresh strawberry frosting on a light vanilla sponge. A timeless, crowd-pleasing favourite.</p>
+              <div class="product-footer">
+                <span class="product-price">₹149</span>
+                <button class="btn-add">+ Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="product-card">
+            <div class="product-thumb" style="background: linear-gradient(135deg, #f5e8d5, #e8d4b0);">
+              🍫
+            </div>
+            <div class="product-body">
+              <div class="product-meta">
+                <h3>Chocolate Lava</h3>
+                <span class="badge warning">Chef's Pick</span>
+              </div>
+              <p>Rich dark cocoa with a warm, gooey chocolate centre. Pure, unapologetic indulgence.</p>
+              <div class="product-footer">
+                <span class="product-price">₹159</span>
+                <button class="btn-add">+ Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="product-card">
+            <div class="product-thumb" style="background: linear-gradient(135deg, #fff3d0, #ffe8a8);">
+              🍊
+            </div>
+            <div class="product-body">
+              <div class="product-meta">
+                <h3>Orange Zest</h3>
+                <span class="badge secondary">New</span>
+              </div>
+              <p>Bright citrus frosting on a fluffy sponge — a refreshing, zesty twist on a classic.</p>
+              <div class="product-footer">
+                <span class="product-price">₹139</span>
+                <button class="btn-add">+ Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
-    </section>
+  </section>
+
+  <!-- ── WHY CHOOSE US ──────────────────────────────── -->
+  <section class="section-muted">
+    <div class="container">
+
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <span class="section-eyebrow">Why Sweet Bliss</span>
+        <h2 class="section-heading">Baked with Purpose</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-3">
+          <div class="feature-card">
+            <div class="feature-icon-wrap">🌿</div>
+            <h3>100% Fresh</h3>
+            <p>Premium ingredients sourced daily. No preservatives, no shortcuts, no compromises.</p>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="feature-card">
+            <div class="feature-icon-wrap">🎨</div>
+            <h3>Custom Designs</h3>
+            <p>Bespoke cupcakes crafted for weddings, birthdays, and every special occasion.</p>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="feature-card">
+            <div class="feature-icon-wrap">🚀</div>
+            <h3>Same-Day Delivery</h3>
+            <p>Order before 2 PM and receive your cupcakes the very same evening.</p>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="feature-card">
+            <div class="feature-icon-wrap">⭐</div>
+            <h3>4.9 Star Rated</h3>
+            <p>Loved by over 10,000 customers. The proof is in the cupcake.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── TESTIMONIALS ───────────────────────────────── -->
+  <section class="section">
+    <div class="container">
+
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <span class="section-eyebrow">Testimonials</span>
+        <h2 class="section-heading">What Our Customers Say</h2>
+      </div>
+
+      <div class="row">
+
+        <div class="col-4">
+          <div class="testimonial-card">
+            <p class="testimonial-body">
+              The Strawberry Dream cupcakes were the highlight of my daughter's
+              birthday party. Absolutely divine — everyone asked for the recipe!
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">P</div>
+              <div>
+                <span class="testimonial-name">Priya Sharma</span>
+                <span class="testimonial-stars">★★★★★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="testimonial-card">
+            <p class="testimonial-body">
+              Ordered Chocolate Lava for our office event — disappeared in minutes.
+              Genuinely the best cupcakes I have ever tasted. Period.
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">R</div>
+              <div>
+                <span class="testimonial-name">Rahul Mehra</span>
+                <span class="testimonial-stars">★★★★★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="testimonial-card">
+            <p class="testimonial-body">
+              Same-day delivery, beautifully packaged, and they tasted incredible.
+              Sweet Bliss is now my go-to for every occasion, big or small.
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">A</div>
+              <div>
+                <span class="testimonial-name">Ananya Singh</span>
+                <span class="testimonial-stars">★★★★★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA ───────────────────────────────────────── -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Ready to Sweeten Your Day?</h2>
+      <p>Order now and enjoy free delivery on your first box.</p>
+      <button class="btn-cta">Shop All Cupcakes →</button>
+    </div>
+  </section>
+
 </main>
 
+<!-- ── FOOTER ────────────────────────────────────── -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-5">
+        <span class="footer-brand">🧁 Sweet Bliss</span>
+        <p class="footer-tagline">
+          Artisan cupcakes baked fresh daily<br>in the heart of the city.
+        </p>
+      </div>
+
+      <div class="col-2">
+        <p class="footer-heading">Menu</p>
+        <ul class="footer-links">
+          <li><a href="#">Best Sellers</a></li>
+          <li><a href="#">Seasonal</a></li>
+          <li><a href="#">Custom Orders</a></li>
+          <li><a href="#">Gift Boxes</a></li>
+        </ul>
+      </div>
+
+      <div class="col-2">
+        <p class="footer-heading">Company</p>
+        <ul class="footer-links">
+          <li><a href="about.html" data-link>About Us</a></li>
+          <li><a href="contact.html" data-link>Contact</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+        </ul>
+      </div>
+
+      <div class="col-2">
+        <p class="footer-heading">Support</p>
+        <ul class="footer-links">
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Delivery Info</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Allergens</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      © 2026 Sweet Bliss. All rights reserved.
+    </div>
+  </div>
+</footer>
+
 <script src="js/router.js" defer></script>
-<!-- <script src="https://unpkg.com/@knadh/oat/oat.min.js" defer></script> -->
+<script src="https://unpkg.com/@knadh/oat@0.3.0/oat.min.js" defer></script>
 </body>
 </html>

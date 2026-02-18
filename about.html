@@ -2,172 +2,311 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="About page">
+  <meta name="description" content="About Sweet Bliss – our story, values, and promise.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" rel="preconnect" href="https://unpkg.com/@knadh/oat@0.3.0/oat.min.css"> -->
-   <link rel="stylesheet" href="https://unpkg.com/@knadh/oat@0.3.0/oat.min.css" integrity="sha384-RnZ1MQ4DrFkdnOH0CSxWlhGbAcDTDcgNoY1wjzebP7d6QhcVCr4Od/vOgQ16olb8" crossorigin="anonymous">
+  <meta http-equiv="Content-Security-Policy"
+content="
+default-src 'self';
+style-src 'self' https://unpkg.com;
+script-src 'self' https://unpkg.com;
+img-src 'self' data:;
+object-src 'none';
+base-uri 'self';
+form-action 'self';
+">
+  <link rel="stylesheet" href="https://unpkg.com/@knadh/oat@0.3.0/oat.min.css" integrity="sha384-RnZ1MQ4DrFkdnOH0CSxWlhGbAcDTDcgNoY1wjzebP7d6QhcVCr4Od/vOgQ16olb8" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
-  <title>About</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <title>About — Sweet Bliss</title>
 </head>
 <body>
 
-<header class="py-4 bg-white shadow-sm">
-  <div class="container flex justify-between items-center">
-    <h1 class="text-2xl font-bold text-[#FF6FAE]">
-      Sweet Bliss
-    </h1>
-    <nav class="flex gap-4">
-        <a href="index.html" data-link>Home</a>
-        <a href="about.html" data-link>About</a>
-        <a href="contact.html" data-link>Contact</a>
+<!-- ── HEADER ─────────────────────────────────────── -->
+<header>
+  <div class="container">
+    <nav class="site-nav">
+      <a href="index.html" class="nav-brand" data-link>🧁 Sweet Bliss</a>
+      <ul class="nav-links">
+        <li><a href="index.html" data-link>Home</a></li>
+        <li><a href="about.html" data-link>About</a></li>
+        <li><a href="contact.html" data-link>Contact</a></li>
+      </ul>
+      <button class="btn-nav-order">Order Now</button>
     </nav>
   </div>
 </header>
 
 <main id="app">
-  <section class="py-20 text-center">
 
+  <!-- ── PAGE HERO ──────────────────────────────────── -->
+  <section class="page-hero">
     <div class="container">
-        <div class="row">
-            <div class="col-8 flex flex-col justify-center items-center">
-                <h2 class="text-5xl font-bold mb-2 text-[#FF6FAE]">
-                    Baked With Love. Served With Joy.
-                </h2>
-                <p class="text-lg mb-2 max-w-2xl mx-auto">
-                    At Sweet Bliss Cupcakes, every swirl of frosting tells a story of passion, creativity, and handcrafted perfection.
-                </p>
-            </div>
-            <div class="col-4">
-                <svg width="180" height="180" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sweet Cupcake">
-  
-                    <!-- Frosting -->
-                    <path d="M60 90
-                            C40 70, 60 50, 85 60
-                            C95 35, 130 40, 130 65
-                            C155 60, 170 85, 140 95
-                            Z"
-                            fill="#FF6FAE"/>
-
-                    <!-- Cup Base -->
-                    <path d="M60 95 L140 95 L130 150 L70 150 Z"
-                            fill="#FF8C42"/>
-
-                    <!-- Wrapper Lines -->
-                    <line x1="80" y1="100" x2="85" y2="150" stroke="#ffffff" stroke-width="2"/>
-                    <line x1="100" y1="100" x2="100" y2="150" stroke="#ffffff" stroke-width="2"/>
-                    <line x1="120" y1="100" x2="115" y2="150" stroke="#ffffff" stroke-width="2"/>
-
-                    <!-- Cherry -->
-                    <circle cx="100" cy="50" r="8" fill="#E63946"/>
-                    <line x1="100" y1="42" x2="95" y2="30" stroke="#2A2A2A" stroke-width="2"/>
-
-                </svg>
-            </div>
-        </div>
+      <span class="section-eyebrow">Our Story</span>
+      <h1>Baked With Love.<br>Served With Joy.</h1>
+      <p>
+        At Sweet Bliss, every swirl of frosting tells a story of passion,
+        creativity, and handcrafted perfection.
+      </p>
     </div>
-</section>
+  </section>
 
+  <!-- ── OUR STORY ──────────────────────────────────── -->
+  <section class="story-section">
+    <div class="container">
+      <div class="row" style="align-items: flex-start; gap: 0;">
 
-
-<!-- OUR STORY -->
-<section class="py-16 bg-white">
-  <div class="container max-w-3xl">
-    <h3 class="text-3xl font-bold mb-6 text-[#FF6FAE] text-center">
-      Our Story
-    </h3>
-
-    <p class="mb-4">
-      Sweet Bliss began in a small home kitchen with a single oven, a handwritten recipe book, and a dream — to create cupcakes that make people smile.
-    </p>
-
-    <p class="mb-4">
-      What started as weekend baking experiments soon turned into something magical. Friends shared with friends, birthdays became sweeter, and celebrations felt more special.
-    </p>
-
-    <p class="mb-4 font-semibold text-[#FF8C42]">
-      Fresh ingredients. Handmade care. Unforgettable taste.
-    </p>
-  </div>
-</section>
-
-<div class="container">
-    <div class="row">
-        <!-- WHAT MAKES US SPECIAL -->
-        <section class="col-4 py-16">
-
-        <div class="container max-w-3xl text-center">
-            <h3 class="text-3xl font-bold mb-8 text-[#FF6FAE]">
-            What Makes Us Special
-            </h3>
-
-            <ul class="space-y-4 text-lg">
-            <li>🌿 Premium, high-quality ingredients</li>
-            <li>🧁 Freshly baked daily in small batches</li>
-            <li>🎨 Custom designs for birthdays, weddings & events</li>
-            <li>🚚 Same-day delivery available</li>
-            <li>💖 Made with genuine passion</li>
-            </ul>
+        <div class="col-6" style="padding-right: 3rem;">
+          <span class="section-eyebrow">How it All Began</span>
+          <h2 class="section-heading" style="margin-bottom: 1.5rem;">A Kitchen, a Dream,<br>and One Oven</h2>
+          <p class="story-lead">
+            Sweet Bliss began in a small home kitchen with a single oven,
+            a handwritten recipe book, and a dream — to create cupcakes
+            that make people genuinely smile.
+          </p>
+          <p class="story-lead">
+            What started as weekend baking experiments soon turned into something
+            magical. Friends shared with friends, birthdays became sweeter,
+            and every celebration felt a little more special.
+          </p>
+          <p class="story-lead">
+            Today, we bake hundreds of cupcakes every morning — each one still
+            made by hand, still made with care, and still made to make you smile.
+          </p>
+          <blockquote class="story-highlight">
+            Fresh ingredients. Handmade care. Unforgettable taste.
+          </blockquote>
         </div>
-        </section>
 
-        <!-- OCCASIONS -->
-        <section class="col-4 py-16 bg-white">
-        <div class="container max-w-3xl text-center">
-            <h3 class="text-3xl font-bold mb-6 text-[#FF6FAE]">
-            For Every Occasion
-            </h3>
-
-            <p class="mb-6">
-            From cozy coffee moments to grand celebrations, our cupcakes are designed to fit every mood:
-            </p>
-
-            <div class="grid md:grid-cols-2 gap-6 text-lg">
-            <div>🎂 Birthday Parties</div>
-            <div>💍 Weddings & Anniversaries</div>
-            <div>🎁 Corporate Gifting</div>
-            <div>👶 Baby Showers</div>
-            <div class="md:col-span-2">🍰 Just-because treats</div>
+        <div class="col-6">
+          <span class="section-eyebrow">Milestones</span>
+          <h2 class="section-heading" style="margin-bottom: 2rem;">Our Journey</h2>
+          <div class="milestone-list">
+            <div class="milestone-item">
+              <span class="milestone-year">2018</span>
+              <div class="milestone-text">
+                <strong>Started in a home kitchen</strong>
+                <p>Our founder baked her first batch of strawberry cupcakes for a neighbour's birthday. The rest is history.</p>
+              </div>
             </div>
-        </div>
-        </section>
-
-        <!-- PROMISE -->
-        <section class="col-4 py-16">
-        <div class="container max-w-3xl text-center">
-            <h3 class="text-3xl font-bold mb-6 text-[#FF6FAE]">
-            Our Promise
-            </h3>
-
-            <p class="mb-6">
-            We believe desserts should not just taste good — they should feel special.
-            </p>
-
-            <div class="space-y-3 text-lg">
-            <div>✔ Freshness</div>
-            <div>✔ Flavor</div>
-            <div>✔ A touch of happiness</div>
+            <div class="milestone-item">
+              <span class="milestone-year">2019</span>
+              <div class="milestone-text">
+                <strong>First 1,000 happy customers</strong>
+                <p>Word spread fast. We moved out of the home kitchen and into our first dedicated baking studio.</p>
+              </div>
             </div>
+            <div class="milestone-item">
+              <span class="milestone-year">2021</span>
+              <div class="milestone-text">
+                <strong>Launched same-day delivery</strong>
+                <p>Because fresh cupcakes shouldn't have to wait. We expanded our team and delivery network city-wide.</p>
+              </div>
+            </div>
+            <div class="milestone-item">
+              <span class="milestone-year">2024</span>
+              <div class="milestone-text">
+                <strong>10,000+ customers and counting</strong>
+                <p>Our biggest milestone yet — and we celebrated the only way we know how: with cupcakes for everyone.</p>
+              </div>
+            </div>
+          </div>
         </div>
-        </section>
+
+      </div>
     </div>
-</div>
+  </section>
 
-<!-- CTA -->
-<section class="py-20 bg-[#FF6FAE] text-white text-center">
-  <div class="container">
-    <h3 class="text-3xl font-bold mb-6">
-      Ready to taste the magic?
-    </h3>
+  <!-- ── WHAT MAKES US SPECIAL ──────────────────────── -->
+  <section class="section-muted">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <span class="section-eyebrow">What Makes Us Special</span>
+        <h2 class="section-heading">Crafted Differently</h2>
+        <p class="section-sub">
+          We do things a little differently here — and we think you'll taste the difference.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <div class="feature-card">
+            <div class="feature-icon-wrap">🌿</div>
+            <h3>Premium Ingredients</h3>
+            <p>We source the finest ingredients daily — no preservatives, no artificial flavours, ever.</p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="feature-card">
+            <div class="feature-icon-wrap">🧁</div>
+            <h3>Small-Batch Baking</h3>
+            <p>Every batch is baked fresh in small quantities to guarantee maximum flavour and freshness.</p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="feature-card">
+            <div class="feature-icon-wrap">💖</div>
+            <h3>Genuine Passion</h3>
+            <p>We pour real love into every cupcake. It sounds cliché — but one bite and you'll understand.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <a href="index.html" data-link
-       class="px-6 py-3 bg-[#FF8C42] rounded-lg text-lg shadow-md hover:scale-105 transition inline-block">
-      Order Your Favorites Today
-    </a>
-  </div>
-</section>
+  <!-- ── FOR EVERY OCCASION ─────────────────────────── -->
+  <section class="section" style="background: var(--card);">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <span class="section-eyebrow">Occasions</span>
+        <h2 class="section-heading">For Every Moment</h2>
+        <p class="section-sub">
+          From quiet coffee-table treats to grand celebrations —
+          our cupcakes are made to fit every mood and occasion.
+        </p>
+      </div>
+      <div class="row" style="margin-bottom: 1.25rem;">
+        <div class="col-4">
+          <div class="occasion-card">
+            <span class="occasion-icon">🎂</span>
+            <strong>Birthday Parties</strong>
+            <p>Custom-designed towers and signature flavours to make any birthday unforgettable.</p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="occasion-card">
+            <span class="occasion-icon">💍</span>
+            <strong>Weddings & Anniversaries</strong>
+            <p>Elegant, bespoke cupcake displays crafted to match your theme and palette.</p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="occasion-card">
+            <span class="occasion-icon">🎁</span>
+            <strong>Corporate Gifting</strong>
+            <p>Branded gift boxes and bulk orders — impress clients, reward teams.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <div class="occasion-card">
+            <span class="occasion-icon">👶</span>
+            <strong>Baby Showers</strong>
+            <p>Sweet pastel creations and gender-reveal designs that delight every guest.</p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="occasion-card">
+            <span class="occasion-icon">🍰</span>
+            <strong>Just-Because Treats</strong>
+            <p>Because you don't need a reason to treat yourself to something wonderful.</p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="occasion-card">
+            <span class="occasion-icon">🎄</span>
+            <strong>Seasonal Specials</strong>
+            <p>Limited edition flavours for festivals, holidays, and every season of the year.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── OUR PROMISE ────────────────────────────────── -->
+  <section class="section-muted">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <span class="section-eyebrow">Our Promise</span>
+        <h2 class="section-heading">We Never Compromise</h2>
+        <p class="section-sub">
+          We believe desserts should not just taste good — they should feel special.
+          Here is what we promise, every single time.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <div class="feature-card">
+            <div class="feature-icon-wrap">✅</div>
+            <h3>Freshness, Always</h3>
+            <p>Every cupcake is baked the same morning it is delivered. Never a day old, never frozen.</p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="feature-card">
+            <div class="feature-icon-wrap">🎯</div>
+            <h3>Flavour First</h3>
+            <p>We taste every batch before it leaves our kitchen. If it is not perfect, we bake it again.</p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="feature-card">
+            <div class="feature-icon-wrap">✨</div>
+            <h3>A Touch of Happiness</h3>
+            <p>We want every box we send out to make someone's day a little bit brighter.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA ───────────────────────────────────────── -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Ready to Taste the Magic?</h2>
+      <p>Order your favourites today and experience the Sweet Bliss difference.</p>
+      <a href="index.html" data-link>
+        <button class="btn-cta">Order Your Favourites →</button>
+      </a>
+    </div>
+  </section>
+
 </main>
 
+<!-- ── FOOTER ────────────────────────────────────── -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-5">
+        <span class="footer-brand">🧁 Sweet Bliss</span>
+        <p class="footer-tagline">
+          Artisan cupcakes baked fresh daily<br>in the heart of the city.
+        </p>
+      </div>
+      <div class="col-2">
+        <p class="footer-heading">Menu</p>
+        <ul class="footer-links">
+          <li><a href="#">Best Sellers</a></li>
+          <li><a href="#">Seasonal</a></li>
+          <li><a href="#">Custom Orders</a></li>
+          <li><a href="#">Gift Boxes</a></li>
+        </ul>
+      </div>
+      <div class="col-2">
+        <p class="footer-heading">Company</p>
+        <ul class="footer-links">
+          <li><a href="about.html" data-link>About Us</a></li>
+          <li><a href="contact.html" data-link>Contact</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+        </ul>
+      </div>
+      <div class="col-2">
+        <p class="footer-heading">Support</p>
+        <ul class="footer-links">
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Delivery Info</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Allergens</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Sweet Bliss. All rights reserved.
+    </div>
+  </div>
+</footer>
+
 <script src="js/router.js" defer></script>
-<!-- <script src="https://unpkg.com/@knadh/oat/oat.min.js" defer></script> -->
+<script src="https://unpkg.com/@knadh/oat@0.3.0/oat.min.js" defer></script>
 </body>
 </html>
